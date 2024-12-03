@@ -1,0 +1,870 @@
+/* Colors */
+:root {
+    --primary-bg: #232E26;
+    --secondary-bg: #D9EFDE;
+    --accent-color: #5F6F52;
+    --text-color: #1E1E1E;
+    --highlight-bg: #C7A78A;
+    --light-bg: #F6F5F4;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-bg);
+    color: var(--secondary-bg);
+    text-align: center;
+    padding: 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('../assets/image/background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary-bg);
+    opacity: 0.6;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Text Container */
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.text-container img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.text-container h1 {
+    font-size: 3em;
+    font-weight: 900;
+    margin: 0.2em 0;
+}
+
+.text-container p {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 0.5em 0;
+}
+
+/* CTA Button (Outlined) */
+.cta-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--secondary-bg);
+    background-color: transparent;
+    border: 1px solid var(--secondary-bg);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    align-self: center;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-bg);
+    color: var(--secondary-bg);
+}
+
+/* Sections */
+.experience-cards,
+.room-cards,
+.guide-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--secondary-bg);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Introduction Section Styling */
+.introduction {
+    background-color: var(--secondary-bg);
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.introduction .text-content {
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.intro-text {
+    font-size: 1.2em;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.intro-highlight {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.intro-description {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.intro-callout {
+    font-size: 1em;
+    font-weight: 300;
+    color: var(--text-color);
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+/* CTA Section within Introduction */
+.cta {
+    max-width: 800px;
+    text-align: center;
+}
+
+.call-to-action {
+    font-size: 1.3em;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+/* Solid Button for Introduction Section */
+.cta-button--solid {
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: var(--secondary-bg);
+    background-color: var(--primary-bg);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button--solid:hover {
+    background-color: var(--accent-color);
+    color: var(--light-bg);
+}
+
+/* Location Section */
+.location {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.location-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.location-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.location-content h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.location-content p {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Experience Section */
+.experience {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.experience h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+
+.experience-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95em;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+/* Gallery Section */
+.gallery {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Assign varied sizes for a structured, aligned layout */
+.gallery-item:nth-child(1) {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.gallery-item:nth-child(2) {
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+.gallery-item:nth-child(3) {
+    grid-row: span 2;
+    grid-column: span 1;
+}
+
+.gallery-item:nth-child(4) {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.gallery-item:nth-child(5) {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.gallery-item:nth-child(6) {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.gallery-item:nth-child(7) {
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+.gallery-item:nth-child(8) {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.gallery-item:nth-child(9) {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+/* Inclusions and Exclusions Section */
+.inclusions-exclusions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.inclusion-card,
+.exclusion-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+.inclusion-card h2,
+.exclusion-card h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.inclusion-card ul,
+.exclusion-card ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.inclusion-card li,
+.exclusion-card li {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.inclusion-card li i,
+.exclusion-card li i {
+    color: var(--accent-color);
+    /* Use site’s accent color */
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.inclusion-card a,
+.exclusion-card a {
+    color: var(--accent-color);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.inclusion-card a:hover,
+.exclusion-card a:hover {
+    text-decoration: none;
+}
+
+/* Emphasized Text */
+.exclusion-card li em {
+    color: var(--text-color);
+    font-style: italic;
+    font-weight: 300;
+    margin-left: 25px;
+    display: block;
+    margin-top: 5px;
+    font-size: 0.95em;
+}
+
+/* Room Options Information Section */
+.room-options-info {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: var(--light-bg);
+}
+
+.room-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    gap: 40px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.room-options-info h2 {
+    font-size: 2.5em;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.room-options-info .subtext {
+    font-size: 1em;
+    color: var(--text-color);
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Room Options Cards Section */
+.room-options-cards {
+    background-color: var(--light-bg);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.room-options-cards .room-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.room-options-cards .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+}
+
+.room-options-cards .card h3 {
+    font-size: 1.8em;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.room-options-cards .card .price {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.room-options-cards .card .description {
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.room-options-cards .card ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.room-options-cards .card ul li {
+    font-size: 1em;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.room-options-cards .card ul li::before {
+    content: "✔️";
+    color: var(--accent-color);
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+.room-options-cards .cta-button {
+    background-color: var(--primary-bg);
+    color: var(--secondary-bg);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+.room-options-cards .cta-button:hover {
+    background-color: var(--highlight-bg);
+    color: var(--text-color);
+}
+
+/* Meet Your Guides Section */
+.guides {
+    background-color: var(--primary-bg);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.guides h2 {
+    font-size: 2.5em;
+    color: var(--secondary-bg);
+    /* Adjust text color for contrast */
+    margin-bottom: 40px;
+}
+
+.guide-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1.8em;
+    color: var(--text-color);
+    /* Default text color */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 1em;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.learn-more-outline {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+.learn-more-outline:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-bg);
+}
+
+/* FAQ Section */
+.faq {
+    background-color: var(--light-bg);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 2.5em;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--accent-color);
+    padding: 10px 0;
+}
+
+.accordion-button {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--text-color);
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s;
+}
+
+.accordion-button:hover {
+    color: var(--accent-color);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 10px;
+    color: var(--text-color);
+}
+
+.accordion-content p {
+    margin: 10px 0;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Active state */
+.accordion-item.active .accordion-content {
+    max-height: 200px;
+}
+
+.accordion-item.active .accordion-button {
+    color: var(--accent-color);
+}
+
+/* Contact Us Section */
+.contact {
+    background-color: var(--light-bg);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.1em;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+
+/* Contact Options Styling */
+.contact-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-option {
+    background-color: #fff;
+    border: 2px solid var(--primary-bg);
+    border-radius: 50px;
+    padding: 15px;
+    color: var(--primary-bg);
+    font-size: 1.1em;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-option .material-icons {
+    font-size: 1.5em;
+}
+
+/* Hover effect */
+.contact-option:hover {
+    background-color: var(--primary-bg);
+    color: var(--secondary-bg);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-bg);
+    color: var(--secondary-bg);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer-logo img {
+    max-height: 50px;
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--secondary-bg);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-terms {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-terms li a {
+    color: var(--secondary-bg);
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-terms li a:hover {
+    color: var(--highlight-bg);
+}
+
+.social-links a {
+    color: var(--secondary-bg);
+    margin: 0 5px;
+    font-size: 1.5em;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: var(--highlight-bg);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .experience-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .experience-cards {
+        grid-template-columns: 1fr;
+    }
+}
