@@ -13,7 +13,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css" />
+    <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+/>
   </head>
   <body>
     <!-- Header Section -->
@@ -27,6 +34,12 @@
       </p>
     </header> -->
 
+    <div class="whatsapp-icon">
+      <a href="https://wa.me/352621271260" target="_blank" aria-label="Contact us on WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    </div>
+    
     <!-- Main Hero Section -->
     <section class="hero">
       <div class="overlay"></div>
@@ -193,46 +206,150 @@
 
     <!-- Gallery Section -->
     <section class="gallery">
-      <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <img
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fa.cdn-hotels.com%2Fgdcs%2Fproduction104%2Fd1223%2Fe6880781-273e-40c0-89a1-4a6e446c3fc6.jpg&f=1&nofb=1&ipt=598ec055b3220a541411178f7413235c9a264f3ae2b337c7303f75f271310662&ipo=images"
-          alt="Gallery Image 1"
-          class="gallery-item"
-        />
-        <img
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.musement.com%2Fcover%2F0002%2F05%2Fthumb_104092_cover_header.jpeg%3F%26q%3D60%26fit%3Dcrop&f=1&nofb=1&ipt=10990a0114831bf21168d388c6394d6a150c17c1723089df00afa69ec40a76f5&ipo=images"
-          alt="Gallery Image 2"
-          class="gallery-item"
-        />
-        <img
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.holidayguru.ch%2Fwp-content%2Fuploads%2F2017%2F07%2Fnorthern-coast-near-boaventura-madeira-island-portugal-shutterstock_164131532-1.jpg&f=1&nofb=1&ipt=9a5c6f427ef19ada8e2cf7458ec7818014af3db527f6290ccc330afc277eda94&ipo=images"
-          alt="Gallery Image 3"
-          class="gallery-item"
-        />
-        <img
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi2-prod.mirror.co.uk%2Fincoming%2Farticle6859207.ece%2FALTERNATES%2Fs1200%2Fsat-travel.jpg&f=1&nofb=1&ipt=787ff5c4929ce505e4440a0dbb696c8a7625dfe2a1524631f68b4a38e7e6b147&ipo=images"
-          alt="Gallery Image 4"
-          class="gallery-item"
-        />
-        <img
-          src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.journeyera.com%2Fwp-content%2Fuploads%2F2020%2F08%2FSEIXAL-BEACH-MADEIRA-0554-1024x631.jpg&f=1&nofb=1&ipt=a6ecc07bb618d286fa5d4cce531c5190c7fcd4a504045645225fe9726a7c0d37&ipo=images"
-          alt="Gallery Image 5"
-          class="gallery-item"
-        />
-        <img
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fexploredbymarta.com%2Fwp-content%2Fuploads%2F2021%2F09%2FCaldeirao-Verde-waterfall-Madeira.jpg%3Fresize%3D1152%252C1536%26ssl%3D1&f=1&nofb=1&ipt=b8375760e5b2e91f8820473160640ac4db1a9a95b30061279e0599c3a6e1443e&ipo=images"
-          alt="Gallery Image 6"
-          class="gallery-item"
-        />
-        <img
-          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia-cdn.tripadvisor.com%2Fmedia%2Fphoto-m%2F1280%2F28%2F74%2Fc4%2F7a%2Fcaption.jpg&f=1&nofb=1&ipt=d6839312d7c151a112ed73a69194ed6321d6828ede00016ae27222b4874b48a2&ipo=images"
-          alt="Gallery Image 7"
-          class="gallery-item"
-        />
+      <h2 class="text-center mb-4">Gallery</h2>
+      <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img
+              src="assets/carousel/c1.jpg"
+              class="d-block w-100"
+              alt="Gallery Image 1"
+            />
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <img
+              src="assets/carousel/c2.jpg"
+              class="d-block w-100"
+              alt="Gallery Image 2"
+            />
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img
+              src="assets/carousel/c3.jpg"
+              class="d-block w-100"
+              alt="Gallery Image 3"
+            />
+          </div>
+          <!-- Slide 4 -->
+          <div class="carousel-item">
+            <img
+              src="assets/carousel/c4.jpg"
+              class="d-block w-100"
+              alt="Gallery Image 4"
+            />
+          </div>
+          <!-- Slide 5 -->
+          <div class="carousel-item">
+            <img
+              src="assets/carousel/c5.jpg"
+              class="d-block w-100"
+              alt="Gallery Image 5"
+            />
+          </div>
+          <!-- Slide 6 -->
+          <div class="carousel-item">
+            <img
+              src="assets/carousel/c6.jpg"
+              class="d-block w-100"
+              alt="Gallery Image 6"
+            />
+          </div>
+          <!-- Slide 7 -->
+          <div class="carousel-item">
+            <img
+              src="assets/carousel/c7.jpg"
+              class="d-block w-100"
+              alt="Gallery Image 7"
+            />
+          </div>
+          <!-- Slide 8 -->
+          <div class="carousel-item">
+            <img
+              src="assets/carousel/c8.jpg"
+              class="d-block w-100"
+              alt="Gallery Image 8"
+            />
+          </div>
+          <!-- Slide 9 -->
+          <div class="carousel-item">
+            <img
+              src="assets/carousel/c9.jpg"
+              class="d-block w-100"
+              alt="Gallery Image 9"
+            />
+          </div>
+          <!-- Slide 10 -->
+          <div class="carousel-item">
+            <img
+              src="assets/carousel/c10.jpg"
+              class="d-block w-100"
+              alt="Gallery Image 10"
+            />
+          </div>
+          <!-- Slide 11 -->
+          <div class="carousel-item">
+            <img
+              src="assets/carousel/c11.jpg"
+              class="d-block w-100"
+              alt="Gallery Image 11"
+            />
+          </div>
+          <!-- Slide 12 -->
+          <div class="carousel-item">
+            <img
+              src="assets/carousel/c12.jpg"
+              class="d-block w-100"
+              alt="Gallery Image 12"
+            />
+          </div>
+          <!-- Slide 13 -->
+          <div class="carousel-item">
+            <img
+              src="assets/carousel/c13.jpg"
+              class="d-block w-100"
+              alt="Gallery Image 13"
+            />
+          </div>
+          <!-- Slide 14 -->
+          <div class="carousel-item">
+            <img
+              src="assets/carousel/c14.jpg"
+              class="d-block w-100"
+              alt="Gallery Image 14"
+            />
+          </div>
+          <!-- Slide 15 -->
+          <div class="carousel-item">
+            <img
+              src="assets/carousel/c15.jpg"
+              class="d-block w-100"
+              alt="Gallery Image 15"
+            />
+          </div>
+          <!-- Slide 16 -->
+          <div class="carousel-item">
+            <img
+              src="assets/carousel/c16.jpg"
+              class="d-block w-100"
+              alt="Gallery Image 16"
+            />
+          </div>
+        </div>
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
-
+    
     <!-- Inclusions and Exclusions Section -->
     <section class="inclusions-exclusions">
       <div class="inclusion-card">
@@ -276,7 +393,7 @@
           </p>
         </div>
         <div class="image-content">
-          <img src="assets/image/room.jpg" alt="Room Options" />
+          <img src="assets/image/room.png" alt="Room Options" />
         </div>
       </div>
     </section>
@@ -285,10 +402,10 @@
     <section id="room-options-cards" class="room-options-cards">
       <div class="room-cards">
         <!-- Deposit Card -->
-        <div class="card">
+        <div class="card booking">
           <h3>Deposit</h3>
           <p class="price">500€</p>
-          <ul>
+          <ul class="price-description">
             <li>The deposit will be applied to the full price of your choice of accommodation</li>
             <li>Deposit is 100% refundable until January 17th, 2025</li>
             <li>The remainder of the payment is due by February 28th, 2025</li>
@@ -302,7 +419,7 @@
           <h3>Double Room</h3>
           <p class="price">2350€ <span style="font-size: small;">per person</span></p>
           <p class="description">(Early bird price for the first 5 participants)</p>
-          <ul>
+          <ul class="price-description">
             <li>Save 15% with the Early Bird price</li>
             <li>Shared room with twin beds (or double bed for couples/friends)</li>
             <li>Shared bathroom</li>
@@ -320,7 +437,7 @@
           <h3>Single Room</h3>
           <p class="price">2990€ <span style="font-size: small;">per person</span></p>
           <p class="description">(Early bird price for the first 5 participants)</p>
-          <ul>
+          <ul class="price-description">
             <li>Save 15% with the Early Bird price</li>
             <li>Private room with queen bed</li>
             <li>Private bathroom (where available)</li>
@@ -357,13 +474,24 @@
           </p>
           <div class="links-section">
             <h4>Take a sneak peek at her work here:</h4>
-            <ul>
-              <li><a href="https://www.restfulsleep.eu/" target="_blank">🌐 Website</a></li>
-              <li><a href="https://www.instagram.com/restfulsleep.eu/" target="_blank">📷 Instagram: Restful Sleep</a></li>
-              <li><a href="https://www.instagram.com/masha_la_moves/" target="_blank">📷 Instagram: Movement Practice</a></li>
+            <ul class="link-list">
+              <li>
+                <a href="https://www.restfulsleep.eu/" target="_blank">
+                  🌐 Website
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/restfulsleep.eu/" target="_blank">
+                  📷 Instagram: Restful Sleep
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/masha_la_moves/" target="_blank">
+                  📷 Instagram: Movement Practice
+                </a>
+              </li>
             </ul>
-          </div>
-          <button class="cta-button learn-more-outline">Learn More</button>
+          </div>          
         </div>
         
         <div class="card">
@@ -375,17 +503,13 @@
           <p>
             Growing up immersed in nature, he developed a deep appreciation for its wonders, shaping his personality into one of resilience, creativity, and unwavering curiosity. Elvio thrives on taking on challenges that seem insurmountable, driven by a belief that nothing is truly impossible. He is often seen as a coach, inspiring and motivating those around him to break free from limitations and pursue their dreams with passion.
           </p>
-          <p>
-            Whether leading a group hike or sharing personal stories, Elvio approaches every experience with openness and energy. He creates spaces where people feel encouraged to explore, reflect, and connect—not just with each other, but with themselves. Through his guidance, participants are reminded that life is meant to be lived fully, with purpose and joy.
-          </p>
           <div class="links-section">
             <h4>Take a sneak peek at his work here:</h4>
-            <ul>
+            <ul class="link-list">
               <li><a href="https://www.instagram.com/liveinmadeira?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">📷 Instagram: Live in Madeira</a></li>
               <li><a href="https://www.instagram.com/madeira.outdoors?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">📷 Instagram: Madeira Outdoors</a></li>
             </ul>
           </div>
-          <button class="cta-button learn-more-outline">Learn More</button>
         </div>
         
       </div>
@@ -394,118 +518,105 @@
     <!-- FAQ Section -->
     <section class="faq">
       <h2>Frequently Asked Questions</h2>
-      <div class="accordion">
-        <div class="accordion-item">
-          <button class="accordion-button">
+      <div class="me-accordion">
+        <div class="me-accordion-item">
+          <button class="me-accordion-button">
             What is the cancellation policy?
+            <span class="me-accordion-arrow bi bi-chevron-down"></span>
           </button>
-          <div class="accordion-content">
+          <div class="me-accordion-content">
             <p>
-              Full payment due by February 21th 2025. Your payment is 100% refundable until January 17th 2025. 50% of your payment is refundable between 17.01.-21.02.2025. No refund is possible after February 28th 2025
+              Full payment due by February 21th 2025. Your payment is 100% refundable until January 17th 2025. 50% of your payment is refundable between 17.01.-21.02.2025. No refund is possible after February 28th 2025.
             </p>
           </div>
         </div>
-
-        <div class="accordion-item">
-          <button class="accordion-button">
+        <div class="me-accordion-item">
+          <button class="me-accordion-button">
             Are there any prerequisites?
+            <span class="me-accordion-arrow bi bi-chevron-down"></span>
           </button>
-          <div class="accordion-content">
+          <div class="me-accordion-content">
             <p>
               You do not need to have any specific movement level before coming to the retreat. The hikes will be adapted to the group, but you do need to be comfortable with hiking and heights.
             </p>
           </div>
         </div>
-
-        <div class="accordion-item">
-          <button class="accordion-button">
+        <div class="me-accordion-item">
+          <button class="me-accordion-button">
             What are the dream practices?
+            <span class="me-accordion-arrow bi bi-chevron-down"></span>
           </button>
-          <div class="accordion-content">
+          <div class="me-accordion-content">
             <p>
               The dream practices that will be introduced by Maša are an invitation to explore your unconscious patterns through your dreams. You will be guided with journaling prompts and bedtime practices that help you enhance your dream recall and vividness.
             </p>
           </div>
         </div>
-
-        <div class="accordion-item">
-          <button class="accordion-button">
+        <div class="me-accordion-item">
+          <button class="me-accordion-button">
             What do I need to bring?
+            <span class="me-accordion-arrow bi bi-chevron-down"></span>
           </button>
-          <div class="accordion-content">
+          <div class="me-accordion-content">
             <p>
-              Bring a headlamp if you own one, a rain jacket and hiking shoes that have a good grip. Bring a bathing suit as the weather might allow for a swim, and a journal for the habit-building and dream practices that you will be invited into.            </p>
+              Bring a headlamp if you own one, a rain jacket and hiking shoes that have a good grip. Bring a bathing suit as the weather might allow for a swim, and a journal for the habit-building and dream practices that you will be invited into.
+            </p>
           </div>
         </div>
-
-        <div class="accordion-item">
-          <button class="accordion-button">
+        <div class="me-accordion-item">
+          <button class="me-accordion-button">
             Is all the food vegan?
+            <span class="me-accordion-arrow bi bi-chevron-down"></span>
           </button>
-          <div class="accordion-content">
+          <div class="me-accordion-content">
             <p>
               No, most of the meals you will be eating at the venue are vegan, but you will have the opportunity for other types of meals in the several traditional restaurants we will visit during the retreat.
-            </div>
+            </p>
+          </div>
         </div>
       </div>
     </section>
-
+    
     <!-- Contact Us Section -->
     <section class="contact">
       <h2>Get in Touch</h2>
       <p>
-        Reach out to us through any of the following methods. We’d love to
-        connect with you!
+        Reach out to us through any of the following methods. We’d love to connect with you!
       </p>
-
+    
       <div class="contact-options">
-        <a href="mailto:your-email@example.com" class="contact-option">
+        <a href="mailto:rewildinmadeira@gmail.com" class="contact-option" aria-label="Email us">
           <i class="bi bi-envelope-fill"></i>
         </a>
-
-        <a
-          href="https://wa.me/yourphonenumber"
-          target="_blank"
-          class="contact-option"
-        >
+    
+        <a href="https://wa.me/352621271260" target="_blank" class="contact-option" aria-label="Chat with us on WhatsApp">
           <i class="bi bi-whatsapp"></i>
         </a>
-
-        <a
-          href="https://www.instagram.com/yourprofile"
-          target="_blank"
-          class="contact-option"
-        >
+    
+        <a href="https://www.instagram.com/rewildretreats_?igsh=MWQ4YzZ4emdvbHQzaA==" target="_blank" class="contact-option" aria-label="Visit our Instagram">
           <i class="bi bi-instagram"></i>
         </a>
-
-        <a href="tel:+yourphonenumber" class="contact-option">
+    
+        <a href="tel:+352621271260" class="contact-option" aria-label="Call us">
           <i class="bi bi-telephone-fill"></i>
         </a>
       </div>
-    </section>
+    </section>    
 
     <!-- Footer Section -->
     <footer>
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="assets/logo/rewild-light.svg" alt="ReWild Logo" />
+          <img src="assets/logo/logo1.png" alt="ReWild Logo" />
         </div>
       </div>
 
       <div class="footer-bottom">
         <p>&copy; 2025 Rewild Retreat. All rights reserved.</p>
-        <ul class="footer-terms">
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Cookies Settings</a></li>
-        </ul>
-        <div class="social-links">
-          <a href="#" class="bi bi-instagram"></a>
-        </div>
       </div>
     </footer>
 
     <script src="script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
