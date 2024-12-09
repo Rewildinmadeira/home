@@ -342,11 +342,11 @@ header {
     object-fit: cover;
     border-radius: 8px 8px 0 0;
     margin: 0;
-    padding: 0; /* Remove padding para alinhar imagens às bordas */
+    padding: 0;
 }
 
 .experience-content {
-    padding: 20px; /* Padding aplicado apenas ao texto */
+    padding: 20px;
 }
 
 .experience-content h3 {
@@ -423,7 +423,7 @@ header {
     display: flex;
     gap: 20px;
     justify-content: center;
-    flex-wrap: wrap; /* Permite que os cards se reorganizem em telas menores */
+    flex-wrap: wrap;
     padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -438,7 +438,7 @@ header {
     width: 100%;
     max-width: 500px;
     text-align: left;
-    flex: 1; /* Ajusta os tamanhos dos cards para ocupar o espaço disponível */
+    flex: 1;
     box-sizing: border-box;
   }
   
@@ -490,24 +490,24 @@ header {
   /* Responsividade */
   @media (max-width: 768px) {
     .inclusions-exclusions {
-      flex-direction: column; /* Empilha os cards em telas pequenas */
+      flex-direction: column;
       padding: 20px;
     }
   
     .inclusion-card,
     .exclusion-card {
-      max-width: 100%; /* Ocupa toda a largura disponível */
-      margin-bottom: 20px; /* Espaçamento entre os cards */
+      max-width: 100%;
+      margin-bottom: 20px;
     }
   
     .inclusion-card h2,
     .exclusion-card h2 {
-      font-size: 1.5em; /* Reduz o tamanho do título para telas menores */
+      font-size: 1.5em;
     }
   
     .inclusion-card li,
     .exclusion-card li {
-      font-size: 0.9em; /* Ajusta o tamanho do texto */
+      font-size: 0.9em;
     }
   }
   
@@ -824,17 +824,17 @@ header {
 }
 
 .me-accordion-item.active .me-accordion-button {
-    color: var(--accent-color); /* Cor personalizada para o botão ativo */
+    color: var(--accent-color);
 }
 
 .me-accordion-arrow {
     font-size: 1.5em;
-    transform: rotate(0deg); /* Posição inicial */
+    transform: rotate(0deg);
     transition: transform 0.3s ease;
 }
 
 .me-accordion-item.active .me-accordion-arrow {
-    transform: rotate(90deg); /* Rotação para direita quando ativo */
+    transform: rotate(90deg);
 }
 
 .me-accordion-content {
@@ -853,7 +853,7 @@ header {
 
 /* Active state */
 .me-accordion-item.active .me-accordion-content {
-    max-height: 500px; /* Aumente conforme necessário para acomodar o texto */
+    max-height: 500px;
 }
 
 .me-accordion-arrow {
@@ -987,63 +987,71 @@ footer {
     color: var(--highlight-bg);
 }
 
-/* Geral para a seção */
+/* Why Us */
 .why-us {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-family: 'Arial', sans-serif;
-  }
-  
-  /* Container interno */
-  .why-us .content {
-    max-width: 800px;
+    background-color: #D9EFDE;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .why-us .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+  }
+  
+  .why-us .left {
+    flex: 0.4;
     text-align: left;
+    font-size: 3em;
+    font-weight: 200;
+    line-height: 1.4;
   }
   
-  /* Cabeçalho */
-  .why-us h3 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #2a3b4c;
+  .why-us .right {
+    flex: 0.6;
+    margin-left: 20px;
   }
   
-  /* Parágrafos */
-  .why-us p {
-    font-size: 1.1em;
-    line-height: 1.8;
-    margin-bottom: 20px;
-    color: #4a4a4a;
+  .why-us .right p {
+    margin: 0 0 20px;
+    font-size: 1.8em;
+    font-weight: 200;
+    text-align: left;
+  }  
+
+  @media (max-width: 768px) {
+    .why-us {
+      width: 100%;
+      padding: 20px;
+      height: auto;
+    }
+  
+    .why-us .content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .why-us .left {
+      font-size: 2.5em;
+      line-height: 1.2;
+    }
+  
+    .why-us .right {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .why-us .right p {
+      margin: 10px 0;
+      font-size: 1em;
+    }
   }
   
-  /* Listas */
-  .why-us ul {
-    padding-left: 20px;
-    margin: 10px 0;
-  }
-  
-  .why-us ul li {
-    font-size: 1em;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  /* Personalização do texto */
-  .why-us ul li::before {
-    content: "•"; /* Altere para outro símbolo, se preferir */
-    color: #ff6f61;
-    font-size: 1.2em;
-    margin-right: 8px;
-  }
-  
-  /* Sombras e Interatividade */
-  .why-us:hover {
-    transform: translateY(-3px);
-    transition: 0.3s ease-in-out;
-  }
 
 /* Whatsapp */
   .whatsapp-icon {
