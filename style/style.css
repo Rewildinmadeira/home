@@ -303,7 +303,7 @@ header {
 .why-us h2 {
     font-size: 2.5em;
     font-weight: 700;
-    color: var(--text-color);
+    color: var(--primary-bg);
     margin-bottom: 40px;
 }
 
@@ -402,10 +402,6 @@ header {
     color: var(--text-color);
     margin-bottom: 40px;
 }
-
-.gallery {
-    padding: 100px;
-  }
   
   .carousel-inner img {
     max-height: 80vh;
@@ -421,33 +417,32 @@ header {
 /* Inclusions and Exclusions Section */
 .inclusions-exclusions {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 60px 20px;
-    max-width: 1200px;
+    padding: 120px 100px;
+    max-width: 100%;
     margin: 0 auto;
   }
   
   .inclusion-card,
   .exclusion-card {
-    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    padding: 60px;
     width: 100%;
-    max-width: 500px;
     text-align: left;
     flex: 1;
     box-sizing: border-box;
+    background-color: white;
   }
   
   .inclusion-card h2,
   .exclusion-card h2 {
-    font-size: 1.8em;
+    font-size: 2.8em;
     font-weight: 700;
     color: var(--accent-color);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
   }
   
@@ -460,7 +455,7 @@ header {
   
   .inclusion-card li,
   .exclusion-card li {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 400;
     color: var(--text-color);
     margin-bottom: 10px;
@@ -473,6 +468,7 @@ header {
     color: var(--accent-color);
     margin-right: 10px;
     font-size: 1.2em;
+    font-weight: 900;
   }
   
   .inclusion-card a,
@@ -569,7 +565,6 @@ header {
 
 /* Room Options Cards Section */
 .room-options-cards {
-    background-color: var(--light-bg);
     padding: 60px 20px;
     text-align: center;
 }
@@ -583,12 +578,12 @@ header {
 }
 
 .room-options-cards .card {
-    background-color: #fff;
+    border: none;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
     padding: 30px;
     width: 100%;
-    max-width: 400px;
+    max-width: 460px;
     text-align: left;
     display: flex; /* Torna o card um flex container */
     flex-direction: column; /* Elementos empilhados verticalmente */
@@ -596,15 +591,15 @@ header {
 }
 
 .room-options-cards .card h3 {
-    font-size: 1.8em;
+    font-size: 2.5em;
     color: var(--accent-color);
     margin-bottom: 10px;
     text-align: center;
 }
 
 .room-options-cards .card .price {
-    font-size: 2.5em;
-    font-weight: 500;
+    font-size: 3.5em;
+    font-weight: 800;
     color: var(--text-color);
     text-align: center;
     margin-top: 10px;
@@ -613,7 +608,8 @@ header {
 .price-description {
     font-weight: 200;
     font-size: 18px;
-    color: #232E26;
+    color: var(--text-color);
+    margin-bottom: 2em;
 }
 
 .room-options-cards .card .description {
@@ -621,13 +617,12 @@ header {
     font-weight: 500;
     color: var(--accent-color);
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .room-options-cards .card ul {
     list-style-type: none;
     padding: 0;
-    margin-bottom: 20px;
 }
 
 .room-options-cards .card ul li {
@@ -638,11 +633,11 @@ header {
     align-items: center;
 }
 
-.room-options-cards .card ul li::before {
-    content: "✔️";
+.room-options-cards .card ul li i {
     color: var(--accent-color);
     margin-right: 8px;
     font-size: 1.2em;
+    font-weight: 900;
 }
 
 .room-options-cards .cta-button {
@@ -652,7 +647,7 @@ header {
     border: none;
     border-radius: 5px;
     font-weight: 700;
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: center;
     cursor: pointer;
     display: block;
@@ -1090,6 +1085,100 @@ footer {
     margin: 0;
   }
   
+
+/* Activities Section */
+.activities {
+    font-size: 2.5em;
+    background-color: #FFFFFF; /* Fundo branco */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px; /* Espaçamento interno */
+}
+
+.activities .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limita a largura máxima */
+}
+
+.activities .left {
+    flex: 0.6; /* Lado esquerdo maior para a lista */
+    text-align: left;
+}
+
+.activities .left ul {
+    list-style: none; /* Remove bullets padrão */
+    padding: 0;
+    margin: 0;
+}
+
+.activities .left li {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    font-weight: 200;
+    color: var(--primary-bg);
+    margin-bottom: 20px;
+}
+
+.activities .left li i {
+    margin-right: 15px; /* Espaçamento entre o ícone e o texto */
+    font-size: 1.8em; /* Tamanho do ícone */
+    color: var(--primary-bg)
+}
+
+.activities .right {
+    flex: 0.4; /* Lado direito menor para o título */
+    text-align: right;
+}
+
+.activities .right h2 {
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--primary-bg)
+}
+
+.activities .left li i {
+    margin-right: 35px; /* Espaçamento entre o ícone e o texto */
+    font-size: 1em; /* Tamanho do ícone */
+    color: var(--accent-color)
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .activities {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .activities .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .activities .left {
+        text-align: center;
+    }
+
+    .activities .left li {
+        justify-content: center;
+    }
+
+    .activities .right {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .activities .right h2 {
+        font-size: 2em;
+        
+    }
+}
   
 /* Responsive Adjustments */
 @media (max-width: 992px) {
