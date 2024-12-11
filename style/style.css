@@ -3,7 +3,7 @@
     --primary-bg: #232E26;
     --secondary-bg: #D9EFDE;
     --accent-color: #5F6F52;
-    --text-color: #1E1E1E;
+    --text-color: #232E26;
     --highlight-bg: #C7A78A;
     --light-bg: #F6F5F4;
 }
@@ -670,27 +670,31 @@ header {
 }
 
 .guides h2 {
-    font-size: 2.5em;
+    font-size: 3.5em;
     color: var(--secondary-bg);
     margin-bottom: 40px;
+    font-weight: 700;
 }
 
 .guide-cards {
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
+    gap: 40px; /* Espaço maior entre os cards */
+    justify-content: space-between; /* Distribui os cards com espaço entre eles */
+    flex-wrap: wrap; /* Permite que os cards se ajustem em telas menores */
     margin: 0 auto;
+    max-width: 1200px; /* Limita a largura total do container */
+    padding: 0 ; /* Mais espaço nas laterais da seção */
+}
+
+.guide-cards .card .profile-image {
+    padding: 40px 40px 20px 40px;
 }
 
 .card {
     background-color: var(--light-bg);
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 100%;
-    max-width: 500px;
+    width: calc(50% - 40px); /* Ocupa 50% menos o gap entre os cards */
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -706,73 +710,70 @@ header {
 }
 
 .card h3 {
-    font-size: 1.8em;
+    font-size: 2.2em; /* Nome maior */
     color: var(--text-color);
-    /* Default text color */
-    margin-bottom: 10px;
+    font-weight: 700;
+    margin-bottom: 15px;
     text-align: center;
 }
 
 .card p {
-    font-size: 1em;
+    font-size: 1.1em;
     color: var(--text-color);
     line-height: 1.6;
     margin-bottom: 20px;
-    text-align: justify;
-}
-
-.learn-more-outline {
-    border: 1px solid var(--accent-color);
-    color: var(--accent-color);
-}
-
-.learn-more-outline:hover {
-    background-color: var(--accent-color);
-    color: var(--secondary-bg);
+    padding: 0 20px; /* Mais espaço nas laterais dos parágrafos */
+    font-weight: 200; /* Texto mais leve */
 }
 
 .links-section {
     margin-top: 20px;
     text-align: center;
-  }
-  
-  .links-section h4 {
+}
+
+.links-section h4 {
     font-size: 1.2em;
     margin-bottom: 10px;
     color: var(--text-color);
-  }
-  
-  .link-list {
-    list-style: none;
+}
+
+.link-list {
+    list-style: none; /* Remove as bolinhas (markers) */
     padding: 0;
     margin: 0;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  
-  .link-list li {
+    padding: 20px;
+}
+
+.link-list li {
     margin: 5px 0;
-  }
-  
-  .link-list a {
+}
+
+.link-list a {
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.2em;
     color: var(--accent-color);
-    padding: 5px 10px;
+    padding: 15px;
     border: 1px solid var(--accent-color);
-    border-radius: 5px;
+    border-radius: 50%;
     transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .link-list a:hover {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espaço entre o ícone e o texto */
+}
+
+.link-list a:hover {
     background-color: var(--accent-color);
     color: var(--secondary-bg);
-  }
-  
+}
 
-/* FAQ Section */
+.link-list i {
+    font-size: 1.2em; /* Ajusta o tamanho do ícone */
+}
+
 /* FAQ Section */
 .faq {
     background-color: var(--light-bg);
