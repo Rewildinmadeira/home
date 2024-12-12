@@ -482,30 +482,7 @@ header {
   .exclusion-card a:hover {
     text-decoration: none;
   }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .inclusions-exclusions {
-      flex-direction: column;
-      padding: 20px;
-    }
-  
-    .inclusion-card,
-    .exclusion-card {
-      max-width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    .inclusion-card h2,
-    .exclusion-card h2 {
-      font-size: 1.5em;
-    }
-  
-    .inclusion-card li,
-    .exclusion-card li {
-      font-size: 0.9em;
-    }
-  }
+
   
 /* Emphasized Text */
 .exclusion-card li em {
@@ -606,8 +583,8 @@ header {
 }
 
 .price-description {
-    font-weight: 200;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 1.1em;
     color: var(--text-color);
     margin-bottom: 2em;
 }
@@ -1019,34 +996,7 @@ footer {
     text-align: left;
   }  
 
-  @media (max-width: 768px) {
-    .why-us {
-      width: 100%;
-      padding: 20px;
-      height: auto;
-    }
-  
-    .why-us .content {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .why-us .left {
-      font-size: 2.5em;
-      line-height: 1.2;
-    }
-  
-    .why-us .right {
-      margin-left: 0;
-      margin-top: 20px;
-    }
-  
-    .why-us .right p {
-      margin: 10px 0;
-      font-size: 1em;
-    }
-  }
+
   
 
 /* Whatsapp */
@@ -1149,39 +1099,77 @@ footer {
     color: var(--accent-color)
 }
 
-/* Responsivo */
+
+/* Unified Media Queries */
 @media (max-width: 768px) {
+    /* Why Us Section */
+    .why-us {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+    .why-us .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .why-us .left {
+        font-size: 2.5em;
+        line-height: 1.2;
+    }
+    .why-us .right {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .why-us .right p {
+        margin: 10px 0;
+        font-size: 1em;
+    }
+
+    /* Activities Section */
     .activities {
         flex-direction: column;
         padding: 20px;
     }
-
     .activities .content {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-
     .activities .left {
         text-align: center;
     }
-
     .activities .left li {
         justify-content: center;
     }
-
     .activities .right {
         margin-top: 20px;
         text-align: center;
     }
-
     .activities .right h2 {
         font-size: 2em;
-        
+    }
+
+    /* Inclusions and Exclusions Section */
+    .inclusions-exclusions {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .inclusion-card,
+    .exclusion-card {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .inclusion-card h2,
+    .exclusion-card h2 {
+        font-size: 1.5em;
+    }
+    .inclusion-card li,
+    .exclusion-card li {
+        font-size: 0.9em;
     }
 }
-  
-/* Responsive Adjustments */
+
 @media (max-width: 992px) {
     .experience-cards {
         grid-template-columns: repeat(2, 1fr);
