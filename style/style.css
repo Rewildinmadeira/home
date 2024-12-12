@@ -163,7 +163,7 @@ header {
 
 .introduction .text-content {
     max-width: 1000px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .location-content p,
@@ -996,9 +996,6 @@ footer {
     text-align: left;
   }  
 
-
-  
-
 /* Whatsapp */
   .whatsapp-icon {
     position: fixed;
@@ -1100,7 +1097,16 @@ footer {
 }
 
 
-/* Unified Media Queries */
+/* Media Queries Unificadas */
+
+/* Telas até 992px */
+@media (max-width: 992px) {
+    .experience-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Telas até 768px */
 @media (max-width: 768px) {
     /* Why Us Section */
     .why-us {
@@ -1110,8 +1116,11 @@ footer {
     }
     .why-us .content {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        text-align: left;
+        align-items: flex-start;    
+    }
+    .why-us h2 {
+        margin-bottom: 0px;
     }
     .why-us .left {
         font-size: 2.5em;
@@ -1140,11 +1149,10 @@ footer {
         text-align: center;
     }
     .activities .left li {
-        justify-content: center;
+        font-style: 0.6em;
     }
     .activities .right {
-        margin-top: 20px;
-        text-align: center;
+        text-align: right;
     }
     .activities .right h2 {
         font-size: 2em;
@@ -1168,16 +1176,202 @@ footer {
     .exclusion-card li {
         font-size: 0.9em;
     }
-}
 
-@media (max-width: 992px) {
-    .experience-cards {
-        grid-template-columns: repeat(2, 1fr);
+    /* Guides Section */
+    .card {
+        width: 100%; /* Cards ocupam toda a largura disponível */
+        max-width: none; /* Remove o limite de largura */
+    }
+    .guides h2 {
+        font-size: 2.5em; /* Ajusta o tamanho do título em telas menores */
+    }
+    .card h3 {
+        font-size: 1.8em; /* Ajusta o tamanho do nome */
+    }
+    .card p {
+        font-size: 1em; /* Texto um pouco menor para caber melhor */
+    }
+
+    /* Text Container */
+    .text-container h1 {
+        font-size: 2.5em; /* Ajusta o tamanho do título */
+    }
+    .text-container img {
+        max-width: 160px;
+        margin-bottom: 50px;
+    }
+    .text-container p {
+        font-size: 1em;
     }
 }
 
+/* Telas até 600px */
 @media (max-width: 600px) {
     .experience-cards {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Telas até 480px */
+@media (max-width: 480px) {
+    .guides {
+        padding: 40px 10px; /* Reduz o padding geral */
+    }
+    .guides h2 {
+        font-size: 2em; /* Título menor para telas muito pequenas */
+    }
+    .card {
+        padding: 10px; /* Reduz o padding interno dos cards */
+    }
+    .card h3 {
+        font-size: 1.5em; /* Reduz o tamanho do nome ainda mais */
+    }
+    .link-list a {
+        font-size: 1em; /* Reduz tamanho do texto dos links */
+        padding: 10px; /* Menor espaçamento nos botões */
+    }
+
+    /* Text Container */
+    .text-container h1 {
+        font-size: 2.5em; /* Título menor para telas muito pequenas */
+    }
+    .text-container img {
+        max-width: 160px;
+        margin-bottom: 50px;
+    }
+    .text-container p {
+        font-size: 1em; /* Texto um pouco menor */
+    }
+
+    .location-content h2,
+.text-content h2 {
+    font-size: 2.5rem;
+}
+
+.location-content p, 
+.introduction .text-content p {
+    font-size: 18px;
+}
+
+.introduction .text-content p:last-of-type {
+    font-size: 18px;
+}
+
+}
+
+@media (max-width: 768px) {
+    .room-content {
+        flex-direction: column; /* Organiza em coluna */
+        align-items: center; /* Centraliza os itens */
+        gap: 20px; /* Reduz o espaço entre texto e imagem */
+    }
+
+    .room-options-info h2 {
+        font-size: 2.5em; /* Tamanho reduzido para títulos */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .room-options-info .subtext {
+        font-size: 1em; /* Ajusta o tamanho do texto */
+        text-align: center; /* Centraliza os parágrafos */
+        line-height: 1.4; /* Melhora a legibilidade */
+    }
+
+    .image-content img {
+        max-width: 100%; /* Garante que a imagem ocupe a largura disponível */
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .inclusion-card, .exclusion-card {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .activities {
+        flex-direction: column; /* Empilha os elementos */
+        padding: 40px 20px; /* Reduz o espaçamento interno */
+        text-align: center; /* Centraliza texto por padrão */
+    }
+
+    .activities .content {
+        flex-direction: column-reverse; /* Coloca o texto acima da lista */
+        align-items: center; /* Centraliza os elementos */
+        width: 100%; /* Ocupa a largura total */
+    }
+
+    .activities .left {
+        flex: none; /* Remove proporções fixas */
+        width: 100%; /* Garante que a lista ocupe a largura disponível */
+        text-align: left; /* Mantém o alinhamento à esquerda */
+        margin-bottom: 20px; /* Espaçamento inferior */
+    }
+
+    .activities .left ul {
+        padding: 0 20px; /* Adiciona padding para melhor alinhamento */
+        font-size: 0.9em; /* Reduz o tamanho da lista */
+    }
+
+    .activities .left li {
+        margin-bottom: 10px; /* Reduz o espaçamento entre itens */
+        font-size: 0.6em; /* Ajusta o tamanho do texto */
+    }
+
+    .activities .left li i {
+        margin-right: 10px; /* Espaçamento menor entre ícone e texto */
+        font-size: 1.2em; /* Ícones menores */
+    }
+
+    .activities .right {
+        flex: none; /* Remove proporções fixas */
+        width: 100%; /* Título ocupa a largura total */
+        margin-bottom: 20px; /* Espaçamento inferior */
+    }
+
+    .activities .right h2 {
+        font-size: 1.5em; /* Tamanho do título reduzido */
+        text-align: left; /* Centraliza o texto */
+    }
+    .activities .left ul {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-us {
+        padding: 40px 20px; /* Adiciona espaçamento interno */
+    }
+
+    .why-us .content {
+        flex-direction: column; /* Organiza em coluna */
+        align-items: left; /* Centraliza o conteúdo */
+        width: 100%; /* Ocupa a largura total */
+    }
+
+    .why-us .left {
+        flex: none; /* Remove a proporção fixa */
+        font-size: 1.5em; /* Reduz o tamanho do texto */
+        font-weight: 300; /* Deixa o texto mais leve */
+        text-align: left; /* Centraliza o texto */
+        margin-bottom: 20px; /* Espaçamento inferior */
+        line-height: 1.2; /* Ajusta o espaçamento entre linhas */
+        white-space: nowrap; /* Impede quebra de linha */
+    }
+
+    .why-us .left span {
+        display: inline; /* Garante que todos os spans fiquem na mesma linha */
+    }
+
+    .why-us .right {
+        flex: none; /* Remove a proporção fixa */
+        margin-left: 0; /* Remove o espaçamento lateral */
+        text-align: center; /* Centraliza os parágrafos */
+    }
+
+    .why-us .right p {
+        font-size: 1.2em; /* Reduz o tamanho do texto */
+        margin: 10px 0; /* Diminui o espaçamento entre os parágrafos */
     }
 }
