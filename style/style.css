@@ -540,8 +540,8 @@ header {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Room Options Cards Section */
-.room-options-cards {
+  /* Room Options Cards Section */
+  .room-options-cards {
     padding: 60px 20px;
     text-align: center;
 }
@@ -562,9 +562,9 @@ header {
     width: 100%;
     max-width: 460px;
     text-align: left;
-    display: flex; /* Torna o card um flex container */
-    flex-direction: column; /* Elementos empilhados verticalmente */
-    justify-content: space-between; /* Espaço entre o conteúdo e o botão */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .room-options-cards .card h3 {
@@ -582,6 +582,20 @@ header {
     margin-top: 10px;
 }
 
+.room-options-cards .card .price .old-price {
+    display: block;
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.7em;
+    margin-bottom: 5px;
+}
+
+.room-options-cards .card .price .new-price {
+    font-size: 1em;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
 .price-description {
     font-weight: 400;
     font-size: 1.1em;
@@ -595,6 +609,17 @@ header {
     color: var(--accent-color);
     text-align: center;
     margin-bottom: 40px;
+}
+
+.room-options-cards .card .description.special-offer-highlight {
+    font-weight: 700;
+    color: var(--highlight-color);
+    font-size: 1em;
+    background: #c1e2a5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .room-options-cards .card ul {
@@ -630,8 +655,8 @@ header {
     display: block;
     width: 200px;
     padding: 20px 0;
-    margin-top: auto; /* Garante que o botão fique na parte inferior */
-    align-self: center; /* Centraliza horizontalmente o botão */
+    margin-top: auto;
+    align-self: center;
 }
 
 .room-options-cards .cta-button:hover {
